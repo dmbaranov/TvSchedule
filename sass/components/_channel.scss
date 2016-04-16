@@ -1,0 +1,135 @@
+.channel {
+  margin: 10px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background: $lighter-gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  
+  @include col-xs-20;
+  @include col-xs-offset-2;
+  @include col-sm-9;
+  @include col-sm-offset-2;
+  @include col-md-5;
+  @include col-md-offset-0;
+  @include col-lg-4;
+  @include col-lg-offset-1;
+
+  @include mq-md {
+    margin: 10px 2%;
+  }
+}
+
+.channel:first-child,
+.channel:nth-child(6) {
+  @include col-lg-offset-0;
+}
+
+.channel__header {
+  display: flex;
+
+  @include col-xs-24;
+
+  @include mq-xs {
+    flex-wrap: wrap;
+  }
+}
+
+.channel__header__logo {
+  width: 100%;
+  height: 100%;
+
+  @include col-xs-24;
+  @include col-sm-8;
+  @include col-md-8;
+  @include col-lg-8;
+}
+
+.channel__header__logo img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.channel__header__title {
+  margin: 15px 0;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: $font-xbig;
+
+  @include col-xs-24;
+  @include col-sm-14;
+  @include col-sm-offset-1;
+  @include col-md-14;
+  @include col-md-offset-1;
+  @include col-lg-14;
+  @include col-lg-offset-1;
+
+  @include mq-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.channel__content {
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: $font-small;
+  
+  @include col-xs-24;
+
+  @include mq-xs {
+    font-size: $font-medium;
+  }
+}
+
+.channel__content__program {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @include col-xs-24;
+}
+
+.channel__content__program__time {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+
+  @include col-xs-8;
+}
+
+.channel__content__program__title {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+
+
+  text-align: center;
+
+  cursor: pointer;
+
+  @include col-xs-15;
+  @include col-sm-14;
+  @include col-sm-offset-1;
+  @include col-md-14;
+  @include col-md-offset-1;
+  @include col-lg-14;
+  @include col-lg-offset-1;
+}
+
+.channel__footer {
+  background: #00f;
+
+  @include col-xs-24;
+}

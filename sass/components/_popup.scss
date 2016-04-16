@@ -1,0 +1,47 @@
+.popup {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+
+  background: $white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: default;
+
+  z-index: 2;
+
+}
+
+.popup__header {
+  padding: 15px 0;
+
+  text-align: left;
+
+  border-bottom: 1px solid $gray;
+
+  @include col-xs-21;
+  @include col-xs-offset-1;
+}
+
+.popup__button-close {
+  padding: 15px 0;
+
+  text-align: right;
+
+  border-bottom: 1px solid $gray;
+  cursor: pointer;
+  
+  @include col-xs-1;
+}
+
+.popup__body {
+  padding: 15px 0;
+
+  text-align: left;
+
+  @include col-xs-22;
+  @include col-xs-offset-1;
+}

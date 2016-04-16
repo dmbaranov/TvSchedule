@@ -1,0 +1,40 @@
+.menu {
+  height: 100vh;
+
+  background: $white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  @include col-xs-20;
+  @include col-lg-6;
+}
+
+.menu__header {
+  padding: 30px;
+  width: 100%;
+
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  background: $teal;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  box-sizing: border-box;
+}
+
+.menu__option {
+  display: flex;
+  padding-top: 25px;
+
+  @include col-xs-offset-1;
+}
+
+.menu__option__text {
+
+  @include col-xs-12;
+}
+
+.menu__option__value {
+
+  @include col-xs-12;
+}
